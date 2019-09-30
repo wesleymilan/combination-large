@@ -1,0 +1,11 @@
+{
+  "name": "combination-large",
+  "version": "1.0.0",
+  "description": "Combine all elements of an array",
+  "main": "index.js",
+  "author": "Wesley Milan",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
