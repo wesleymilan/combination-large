@@ -58,6 +58,17 @@ Combine.prototype.getLastPosition = function() {
 };
 
 /**
+ * Return
+ * @returns {number}
+ */
+Combine.prototype.getNumberOfCombinations = function() {
+
+    if(this.combinations && this.combinations.total) return this.combinations.total;
+    else return 0;
+
+};
+
+/**
  * Get an specific combination base on it's position
  * @param position
  * @returns {*}
@@ -218,7 +229,7 @@ function _numberOfCombinations(size, range) {
     for(let i = range.min; i <= range.max; i++) {
         result.list[i] = {};
         result.list[i].pos = i;
-        result.list[i].qty = _fac(size) / (_fac(i) * _fac(size - i));
+        result.list[i].qty = Math.round(_fac(size) / (_fac(i) * _fac(size - i)));
         result.list[i].start = result.list[i-1] ? result.list[i-1].end + 1 : 1;
         result.list[i].end = result.list[i].start + result.list[i].qty - 1;
         result.total += result.list[i].qty;
