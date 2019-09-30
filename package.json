@@ -1,6 +1,6 @@
 {
   "name": "combination-large",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Combine all elements of an array",
   "main": "index.js",
   "author": "Wesley Milan",
