@@ -1,9 +1,27 @@
 {
   "name": "combination-large",
-  "version": "1.0.0",
-  "description": "Combine all elements of an array",
-  "main": "index.js",
+  "version": "1.0.1",
+  "description": "Combine all elements of an array without consuming huge amount of memory",
+  "homepage": "https://github.com/wesleymilan/combination-large",
   "author": "Wesley Milan",
+  "engines": {
+    "node": ">=10"
+  },
+  "keywords": [
+    "NodeJS",
+    "array",
+    "combination",
+    "combinator",
+    "large arrays"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wesleymilan/combination-large"
+  },
+  "bugs": {
+    "url": "https://github.com/wesleymilan/combination-large/issues"
+  },
+  "main": "index.js",
   "license": "ISC",
   "dependencies": {
     "debug": "^4.1.1"

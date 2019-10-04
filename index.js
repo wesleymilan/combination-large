@@ -58,6 +58,17 @@ Combine.prototype.getLastPosition = function() {
 };
 
 /**
+ * Return
+ * @returns {number}
+ */
+Combine.prototype.getNumberOfCombinations = function() {
+
+    if(this.combinations && this.combinations.total) return this.combinations.total;
+    else return 0;
+
+};
+
+/**
  * Get an specific combination base on it's position
  * @param position
  * @returns {*}
