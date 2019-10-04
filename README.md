@@ -63,7 +63,7 @@ while(combinated = Combine.next()) {
 31 -  [ 'a', 'b', 'c', 'd', 'e' ]
 ```
 
-### Previous function
+### previous function
 It will decrement the pointer and return the referred combination.
 ```
 combinated = Combine.previous();
@@ -76,7 +76,7 @@ console.log(pos + ' - ', combinated);
 31 -  [ 'a', 'b', 'c', 'd', 'e' ]
 ```
 
-### Get Function
+### get function
 Will return an specific combination based on the position you pass as param.
 ```
 combinated = Combine.get(15);
@@ -89,7 +89,7 @@ console.log(pos + ' - ', combinated);
 15 -  [ 'a', 'b' ]
 ```
 
-### Range Param
+### range param
 You can limit the range of elements on a combination passing `range.min` and `range.max` params.
 ```
 let Combine = new combination({ list: ['a','b','c','d','e'], range: { min: 3, max: 4 } });
@@ -122,10 +122,15 @@ while(combinated = Combine.next()) {
 15 -  [ 'a', 'b', 'c', 'd' ]
 ```
 
-### Reset Function
+### reset function
 You can use reset to start over.
 `Combine.reset();`
 
+### getNumberOfCombinations function
+Return the number of possible unique combinations for the given parameters.
+`Combine.getNumberOfCombinations();`
+
+## Next steps
 This library can be optimized splitting the subgroups reducing the number of cycles to find the result, be my guest
 to fork and send me a pull request.
 
